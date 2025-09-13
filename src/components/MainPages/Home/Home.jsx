@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { useMutation } from "@tanstack/react-query";
+import { Helmet } from "react-helmet-async";
+
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
@@ -104,6 +106,13 @@ export default function Home() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-start bg-gradient-to-b from-gray-900 via-gray-800 to-black p-6">
       {/* Add Note */}
+
+      {/* 🧢 Helmet for SEO */}
+    <Helmet>
+      <title>Home</title>
+      <meta name="description" content="Organize your daily notes easily" />
+    </Helmet>
+
       <button
         onClick={() => {
           setIsOpen(true);

@@ -7,6 +7,7 @@ import axios from "axios";
 import { z } from "zod";
 import img from "../../../../public/thumb-1920-955164.png";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 
 // ✅ Register Schema \\
@@ -77,6 +78,14 @@ export default function Register() {
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-purple-100 via-pink-50 to-white">
+
+      <Helmet>
+  <title>Register | Note App</title>
+  <meta name="description" content="Login to manage your notes" />
+</Helmet>
+
+
+
       <div className="bg-white border-4 border-gray-200 rounded-3xl shadow-2xl flex w-full max-w-5xl overflow-hidden backdrop-blur-sm scale-95">
         {/* Form Section */}
         <div className="w-full md:w-1/2 p-8">

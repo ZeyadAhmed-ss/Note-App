@@ -107,12 +107,6 @@ export default function Home() {
     <div className="min-h-screen flex flex-col items-center justify-start bg-gradient-to-b from-gray-900 via-gray-800 to-black p-6">
       {/* Add Note */}
 
-      {/* 🧢 Helmet for SEO */}
-    <Helmet>
-      <title>Home</title>
-      <meta name="description" content="Organize your daily notes easily" />
-    </Helmet>
-
       <button
         onClick={() => {
           setIsOpen(true);

@@ -62,12 +62,7 @@ export default function Login() {
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-purple-100 via-pink-50 to-white">
-      <Helmet>
-  <title>Login | Note App</title>
-  <meta name="description" content="Login to manage your notes" />
-</Helmet>
-
-
+      
       <div className="bg-white border-4 border-gray-200 rounded-3xl shadow-2xl flex w-full max-w-5xl overflow-hidden scale-95">
         {/* Form Section */}
         <div className="hidden md:block md:w-1/2 bg-gray-100">
